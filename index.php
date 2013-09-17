@@ -16,43 +16,48 @@ $LIB_PATH    = realpath("{$WEBAPP_PATH}/libs");
 /**
  * Requested page
  */
-// $uri = isset($_SERVER['REQUEST_URI']) ? strtolower(trim($_SERVER['REQUEST_URI'], '/')) : 'home';
-$uri = isset($_GET['uri']) ? strtolower(trim($_GET['uri'], '/')) : 'home';
-if (in_array($uri, array('home', 'profile', 'blog', 'projects', 'contact'))) {
-    $controller = $uri;
-    $action     = 'index';
+$uri = strtolower(trim($_SERVER['REQUEST_URI'], '/'));
+
+/**
+ * URLs config
+ */
+$routes = array(
+    ''                      => array('controller' => 'home'    , 'action' => 'index'),
+    'home'                  => array('controller' => 'home'    , 'action' => 'index'),
+    'profile'               => array('controller' => 'profile' , 'action' => 'index'),
+    'blog'                  => array('controller' => 'blog'    , 'action' => 'index'),
+    'projects'              => array('controller' => 'projects', 'action' => 'index'),
+    'contact'               => array('controller' => 'contact' , 'action' => 'index'),
+    'projects/assets/(.*)'  => array('controller' => 'projects', 'action' => 'assets', 'asset' => '{1}'),
+    'blog/(.*)/assets/(.*)' => array('controller' => 'blog'    , 'action' => 'assets', 'code'  => '{1}', 'asset' => '{2}'),
+    'blog/(.*)'             => array('controller' => 'blog'    , 'action' => 'view'  , 'code'  => '{1}'),
+);
+
+/**
+ * Parse request URI
+ */
+foreach ($routes as $regexp => $config) {
+    if (preg_match("@^{$regexp}$@i", $uri, $matches)) {
+        foreach ($config as $name => $value) {
+            for ($i = 1; $i < count($matches); $i++) {
+               $value = str_replace('{'.$i.'}', $matches[$i], $value);
+            }
+            $GLOBALS[$name] = $value;
+        }
+       break;
+    }
 }
-else if (strpos($uri, 'projects/assets/') === 0) {
-    $controller = 'projects';
-    $action     = 'assets';
-    $asset      = substr($uri, 16);
-}
-else if (preg_match('/^blog\/(.*)\/assets\/(.*)$/i', $uri, $matches)) {
-    $controller = 'blog';
-    $action     = 'assets';
-    $code       = $matches[1];
-    $asset      = $matches[2];
-}
-else if (preg_match('/^blog\/(.*)$/i', $uri, $matches)) {
-    $controller = 'blog';
-    $action     = 'view';
-    $code       = $matches[1];
-}
-else {
+
+/**
+ * If no controller was found, redirect to home
+ */
+if (!isset($GLOBALS['controller'])) {
     header('Location : /');
     exit;
 }
 
-// All application functions
-require_once("{$WEBAPP_PATH}/models/personal-card.php");
-require_once("{$WEBAPP_PATH}/models/article.php");
-require_once("{$WEBAPP_PATH}/models/project.php");
-require_once("{$WEBAPP_PATH}/models/competence.php");
-require_once("{$WEBAPP_PATH}/models/experience.php");
-require_once("{$WEBAPP_PATH}/models/study.php");
-require_once("{$WEBAPP_PATH}/models/language.php");
-require_once("{$WEBAPP_PATH}/models/interest.php");
-require_once("{$WEBAPP_PATH}/libs/utils.php");
+// Load content data
+load_contents(simplexml_load_file("{$WEBAPP_PATH}/contents/contents.xml"));
 
 // Call controller
 require_once("{$WEBAPP_PATH}/controllers/{$controller}.php");
