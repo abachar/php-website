@@ -1,0 +1,86 @@
+.prettyprint {
+
+  background: #F7F7F9;
+  color: #333333;
+  font-family: @codeFontFamily;
+  font-size: 0.9em;
+  padding: 9.5px;
+  .border-radius(5px);
+  border: 1px solid #E1E1E8;
+  overflow: auto;
+
+  ul, ol {
+    margin: 0 0 10px 25px;
+    padding: 0;
+    font-size: 0.9em;
+
+    &.linenums {
+      margin: 0 0 0 38px;
+      list-style: decimal;
+
+      & li {
+        color: #BEBEC5;
+        line-height: 20px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  &.linenums {
+    box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+  }
+
+  .pln {
+    color: #48484C;
+  }
+  // Plain text
+  .com {
+    color: #93A1A1;
+  }
+  // Comment
+  .str {
+    color: #DD1144
+  }
+  // string content
+  .kwd {
+    color: #1E347B
+  }
+  // a keyword
+  .com {
+    color: #880000
+  }
+  // a comment
+  .typ {
+    color: #008080
+  }
+  // a type name
+  .lit {
+    color: #195F91
+  }
+  // a literal value
+  .tag {
+    color: #1E347B
+  }
+  // a markup tag name
+  .atn {
+    color: #008080
+  }
+  // a markup attribute name
+  .atv {
+    color: #DD1144
+  }
+  // a markup attribute value
+  .fun {
+    color: #DC322F
+  }
+  // a function name
+  .dec, .var {
+    color: #008080
+  }
+  // a declaration; a variable name
+  .pun, .opn, .clo {
+    color: #93A1A1
+  }
+}
+
+

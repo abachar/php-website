@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+// CONFIGURATION
+// -----------------------------------------------------------------------------------------
+
+// Colors
+@bodyBackground: #fff;
+@footerBackground: #0B2827;
+@figureBackground: #84D7DA;
+
+@textColor: #91939A;
+@linkColor: #5ECCCF;
+@linkColorHover: #0d3233;
+@headingsColor: #2E4F5C;
+@navbarLinkColor: #5DCACE;
+@navbarLinkColorHover: #fff;
+@footerColor: #829899;
+@footerLinkColor: #63D9DD;
+@footerLinkColorHover: #fff;
+@lineColor: #E6EAEA;
+
+// Font
+@baseFontSize: 14px;
+@baseFontFamily: "Georgia";
+@codeFontFamily: Monaco, Menlo, Consolas, "Courier New", monospace;
+//, "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headingsFontFamily: @baseFontFamily;
+@navbarLinkFontFamily: @baseFontFamily;
+@headingsFontWeight: normal;
+
+// Images w=290px
+// Columns
+@pageWidth: 1170px;
+@gridColumnSeparatorWidth: 20px;
+@gridColumnWidth: (@pageWidth - (2 * @gridColumnSeparatorWidth)) / 3;
+@baseLineHeight: 20px;
+
+// Size
+@baseBorderRadius: 0.3em;
+
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+// FUNCTIONS
+// -----------------------------------------------------------------------------------------
+
+// Border radius
+.border-radius(@radius: @baseBorderRadius) {
+  .border-radius(@radius, @radius, @radius, @radius);
+}
+
+.border-radius(@tlr, @trr, @brr, @blr) {
+  -moz-border-radius: @tlr @trr @brr @blr;
+  -webkit-border-radius: @tlr @trr @brr @blr;
+  border-radius: @tlr @trr @brr @blr;
+}
+
+// -----------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------
+//
+// -----------------------------------------------------------------------------------------
+html, body {
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+  height: 100%;
+}
+
