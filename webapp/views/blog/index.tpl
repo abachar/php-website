@@ -16,7 +16,7 @@
                     </a>
                 </figure>
                 <div class="description">
-                    <p>{$article->description|nl2br}</p>
+                    {$article->description|markdown}
                     <a href="/blog/{$article->code}">Lire la suite</a>
                 </div>
             </article>

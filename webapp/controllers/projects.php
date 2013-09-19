@@ -7,8 +7,8 @@ switch ($action) {
 
     case 'index':
         render('projects', 'index', array(
-            'personalCard' => $personalCard,
-            'projects' => $projects
+            'personalCard' => $content->personalCard,
+            'projects' => $content->projects
         ));
         break;
 }

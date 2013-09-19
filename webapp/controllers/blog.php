@@ -2,22 +2,22 @@
 
 switch ($action) {
     case 'assets':
-        write_asset("/blog/{$code}/assets/$asset");
+        write_asset("/articles/{$code}/assets/$asset");
         break;
 
     case 'index':
         render('blog', 'index', array(
-            'personalCard' => $personalCard,
-            'articles' => $articles
+            'personalCard' => $content->personalCard,
+            'articles'     => $content->articles
         ));
         break;
 
     case 'view':
-        $article = $articles[$code];
+        $article = $content->articles[$code];
         $article->contents = get_article_contents($code);
 
         render('blog', 'show', array(
-            'personalCard' => $personalCard,
+            'personalCard' => $content->personalCard,
             'article' => $article
         ));
         break;

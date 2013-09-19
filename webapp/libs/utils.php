@@ -5,10 +5,10 @@
  */
 function render($controller, $view, $vars = array())
 {
-    global $WEBAPP_PATH;
+    global $WEBAPP_PATH, $LIB_PATH;
 
     // Include smarty
-    require_once("{$WEBAPP_PATH}/libs/smarty/Smarty.class.php");
+    require_once("{$LIB_PATH}/smarty/Smarty.class.php");
 
     // Render
     $smarty = new Smarty();
@@ -64,16 +64,6 @@ function get_article_contents($code)
 }
 
 /**
- * @param $code
- */
-function save_article_contents($code, $text)
-{
-    global $WEBAPP_PATH;
-
-    return file_put_contents("{$WEBAPP_PATH}/blog/articles/{$code}/article.md", $text);
-}
-
-/**
  *
  */
 function validate_not_empty($fieldName, &$errors, $msg)
@@ -95,46 +85,4 @@ function validate_not_empty_email($fieldName, &$errors, $msg1, $msg2)
         $errors[$fieldName] = $msg2;
     }
     return $email;
-}
-
-/**
- * @param $startDate
- * @param $endDate
- * @return Experience duration
- */
-function get_duration($startDate, $endDate = null)
-{
-    if ($endDate === null) {
-        $endDate = time();
-    }
-
-    $y = date("Y", $endDate) - date("Y", $startDate);
-    $m = date("m", $endDate) - date("m", $startDate) + 1;
-
-    $duration = '';
-    if ($y == 0) {
-        // Some months :)
-        if ($m == 1) {
-            $duration .= "Un mois";
-        } else {
-            $duration .= "{$m} mois";
-        }
-    } else {
-        // Years
-        if ($y == 1) {
-            $duration .= "Un an";
-        } else {
-            $duration .= "{$y} ans";
-        }
-
-        // Months
-        $m = abs($m);
-        if ($m == 1) {
-            $duration .= " et un mois";
-        } else if ($m > 1) {
-            $duration .= " et {$m} mois";
-        }
-    }
-
-    return $duration;
 }

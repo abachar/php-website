@@ -1,3 +1,346 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contents>
+    <personalcard>
+        <firstname>Abdelhakim</firstname>
+        <lastname>Bachar</lastname>
+        <mobile>+33 6 20 00 00 00</mobile>
+        <emails>
+            <email>first.address@gmail.com</email>
+            <email>second.address@yahoo.com</email>
+        </emails>
+        <address>152, Quelque Part à 75015 Paris</address>
+        <birthday>01/01/1900</birthday>
+        <civil>Célibataire</civil>
+        <job>Référent Technique</job>
+        <jobext>Certifié Java Programmer</jobext>
+        <facebook>http://www.facebook.com/</facebook>
+        <linkedin>http://fr.linkedin.com/</linkedin>
+        <viadeo>http://www.viadeo.com/</viadeo>
+        <about><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna orci, venenatis sed enim non,
+vulputate tincidunt eros. Quisque bibendum consectetur sagittis.
+
+Nulla sit amet sapien ligula. Suspendisse elit felis, congue a auctor sed, blandit vitae arcu.
+
+Aliquam ultrices molestie varius. Aenean ligula odio, ultricies non nibh et, tincidunt tristique
+arcu. Donec vel diam non ante suscipit semper sed sed velit. Aenean sed nunc ut arcu cursus
+vehicula viverra at tortor.
+
+Nulla facilisi. Nullam sit amet diam dui. Ut mauris diam, convallis tincidunt velit rutrum,
+euismod viverra mauris.
+		]]></about>
+    </personalcard>
+
+    <articles>
+        <article>
+            <code>lorem-ipsum</code>
+            <date>25/03/2013</date>
+            <title>Lorem ipsum dolor sit amet</title>
+            <printable>true</printable>
+            <draft>true</draft>
+            <author>Abdelhakim Bachar</author>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna orci, venenatis sed enim non, vulputate
+tincidunt eros. Quisque bibendum consectetur sagittis. Nulla sit amet sapien ligula.
+
+Suspendisse elit felis, congue a auctor sed, blandit vitae arcu. Aliquam ultrices molestie varius. Aenean ligula odio,
+ultricies non nibh et, tincidunt tristique arcu. Donec vel diam non ante suscipit semper sed sed velit. Aenean sed
+nunc ut arcu cursus vehicula viverra at tortor. Nulla facilisi. Nullam sit amet diam dui.
+			]]></description>
+        </article>
+        <article>
+            <code>sed-sodales-egestas</code>
+            <date>12/12/2012</date>
+            <title>Sed sodales egestas diam</title>
+            <printable>false</printable>
+            <draft>true</draft>
+            <author>Abdelhakim Bachar</author>
+            <description><![CDATA[
+Sed sodales egestas diam vitae elementum. Donec a tortor ullamcorper, ullamcorper augue in, auctor lorem. Fusce
+facilisis porttitor quam, iaculis vestibulum ante tempus ut. Aenean arcu nisi, commodo eget sollicitudin at, congue
+quis mauris. Morbi ut tincidunt risus, sit amet dictum ipsum. Vestibulum in sollicitudin dui, ut aliquet nunc.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a dictum odio.
+Praesent eu varius nulla. Nulla cursus aliquam aliquet. Aenean porttitor ligula id magna sagittis rutrum. Sed ultricies
+congue felis, vitae lobortis erat posuere a. Sed gravida nisl eget leo pellentesque sollicitudin.
+			]]></description>
+        </article>
+        <article>
+            <code>praesent-velit-congue</code>
+            <date>11/12/2012</date>
+            <title>Praesent ut velit congue</title>
+            <printable>false</printable>
+            <draft>true</draft>
+            <author>Abdelhakim Bachar</author>
+            <description><![CDATA[
+Praesent ut velit congue, varius risus in, tristique enim. Curabitur sagittis volutpat felis vitae pharetra. Proin
+accumsan elementum magna in mollis.
+
+In aliquam euismod accumsan. Nunc ut ligula at augue volutpat luctus. Vivamustristique nulla non porta facilisis.
+Proin ultrices nulla purus. Nulla ornare leo pulvinar, porta nisl eget, posuere nisl.
+            ]]></description>
+        </article>
+    </articles>
+
+    <projects>
+        <project>
+            <code>sed-arcu-urna</code>
+            <name>Sed ac arcu urna.</name>
+            <tools>
+                <tool>J2EE 7</tool>
+                <tool>Spring</tool>
+                <tool>Hibernate</tool>
+                <tool>Oracle</tool>
+            </tools>
+            <images>
+                <image>1.jpg</image>
+                <image>2.jpg</image>
+                <image>3.jpg</image>
+            </images>
+            <description><![CDATA[
+Sed ac arcu urna. Duis at lectus euismod nisl ultricies scelerisque. Aenean vel neque sed diam pretium laoreet nec ac
+est. Ut condimentum risus mauris, et interdum sapien mattis volutpat. Aenean sit amet laoreet arcu.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos himenaeos.
+            ]]></description>
+        </project>
+        <project>
+            <code>fusce-ligula-dolor</code>
+            <name>Fusce id ligula dolor</name>
+            <tools>
+                <tool>PHP</tool>
+                <tool>HTML5</tool>
+                <tool>CSS3</tool>
+            </tools>
+            <description><![CDATA[
+Proin vehicula mi nec elit porttitor, laoreet varius nulla congue. Sed eget vestibulum purus. Aliquam erat volutpat.
+In hac habitasse platea dictumst. Fusce id ligula dolor. Aliquam erat volutpat. Praesent vehicula tortor magna,
+sed condimentum velit dignissim ut. Phasellus mattis at nisl a consequat.
+            ]]></description>
+        </project>
+        <project>
+            <code>maecenas-semper</code>
+            <name>Maecenas semper</name>
+            <tools>
+                <tool>Android</tool>
+                <tool>SQLLite</tool>
+            </tools>
+            <description><![CDATA[
+Maecenas semper sollicitudin augue. Aliquam viverra posuere facilisis. Praesent semper scelerisque lorem, at elementum
+metus luctus pellentesque. Praesent arcu lacus, faucibus eu ultricies eu, ullamcorper et odio. Nunc eleifend ultrices
+quam sit amet condimentum.
+
+Etiam egestas euismod sapien, quis imperdiet lorem pharetra sit amet. Integer rhoncus eu nulla ac lobortis.
+            ]]></description>
+        </project>
+        <project>
+            <code>aenean-viverra</code>
+            <name>Aenean in viverra</name>
+            <tools>
+                <tool>iPhone</tool>
+                <tool>JSON</tool>
+                <tool>XML</tool>
+            </tools>
+            <description><![CDATA[
+Aenean in viverra justo. Nulla lacinia ligula a metus dapibus tristique. Cras sit amet nulla mi. Integer accumsan justo
+vitae nisi imperdiet ultrices. Maecenas ut quam blandit velit pretium iaculis.
+
+Vivamus et tincidunt leo. Duis vel tincidunt dolor, feugiat gravida erat. Quisque dictum ultricies lectus non tempor.
+Quisque ante sem, pulvinar in mauris in, porttitor euismod eros.
+            ]]></description>
+        </project>
+        <project>
+            <code>aenean-mollis</code>
+            <name>Aenean mollis</name>
+            <tools>
+                <tool>Ruby On Rails</tool>
+                <tool>MySQL</tool>
+            </tools>
+            <description><![CDATA[
+Aenean mollis, quam ut imperdiet eleifend, ipsum lorem blandit nulla, nec lacinia dolor massa at ante. Aliquam varius
+tincidunt turpis, vitae pretium turpis placerat quis. Pellentesque libero nisi, lacinia eu nisl blandit, venenatis
+posuere urna.
+
+Maecenas ut ipsum tellus. Aenean et lacinia orci. Sed orci lacus, suscipit ut quam eget, pulvinar mattis lacus.
+Curabitur id metus ultricies, tempor arcu ac, lobortis est. Aenean lobortis vel ante ac auctor.
+            ]]></description>
+        </project>
+        <project>
+            <code>phasellus</code>
+            <name>Phasellus</name>
+            <tools>
+                <tool>C/C++</tool>
+                <tool>MFC</tool>
+                <tool>Bash</tool>
+            </tools>
+            <description><![CDATA[
+Phasellus dolor metus, euismod et tempus in, convallis in sem. In fringilla ligula consequat tincidunt porttitor.
+
+Nulla auctor nisi est, nec auctor erat molestie tempor. Proin venenatis semper ligula non auctor. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ornare accumsan nunc, ut porttitor
+est commodo at.
+            ]]></description>
+        </project>
+    </projects>
+
+    <competences>
+        <groups>
+            <group>
+                <name>Mobile</name>
+                <skills>
+                    <skill>
+                        <name>Android</name>
+                        <level>Autonome</level>
+                    </skill>
+                    <skill>
+                        <name>iOS(iPhone/iPad)</name>
+                        <level>Autonome</level>
+                    </skill>
+                </skills>
+            </group>
+            <group>
+                <name>SGBD</name>
+                <skills>
+                    <skill>
+                        <name>Oracle</name>
+                        <level>Autonome</level>
+                    </skill>
+                    <skill>
+                        <name>MySQL</name>
+                        <level>Autonome</level>
+                    </skill>
+                </skills>
+            </group>
+            <group>
+                <name>Outils</name>
+                <skills>
+                    <skill>
+                        <name>SVN</name>
+                    </skill>
+                    <skill>
+                        <name>GIT</name>
+                    </skill>
+                    <skill>
+                        <name>Mantis</name>
+                    </skill>
+                    <skill>
+                        <name>Jira</name>
+                    </skill>
+                </skills>
+            </group>
+            <group>
+                <name>Reporting</name>
+                <skills>
+                    <skill>
+                        <name>iReport</name>
+                    </skill>
+                    <skill>
+                        <name>JasperReport</name>
+                    </skill>
+                </skills>
+            </group>
+        </groups>
+    </competences>
+
+    <experiences>
+        <experience>
+            <start>01/01/2013</start>
+            <name>Phasellus</name>
+            <employer>Friend's</employer>
+            <job>Software Developer</job>
+            <roles>
+                <role>Developer.</role>
+                <role>Central Authentication Service.</role>
+            </roles>
+            <tools>
+                <tool>Maven2</tool>
+                <tool>CAS</tool>
+                <tool>Spring</tool>
+                <tool>Hibernate</tool>
+                <tool>Oracle</tool>
+            </tools>
+            <methods>
+                <method>SCRUM</method>
+                <method>XP</method>
+            </methods>
+            <description><![CDATA[
+Phasellus dolor metus, euismod et tempus in, convallis in sem. In fringilla ligula consequat tincidunt porttitor. Nulla
+auctor nisi est, nec auctor erat molestie tempor. Proin venenatis semper ligula non auctor. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ornare accumsan nunc, ut porttitor
+est commodo at.
+Integer eu purus mollis, rhoncus ipsum nec, mattis dolor.
+			]]></description>
+        </experience>
+        <experience>
+            <start>01/08/2005</start>
+            <end>31/12/2012</end>
+            <name>Pellentesque</name>
+            <employer>Friend's</employer>
+            <job>Software Developer</job>
+            <description><![CDATA[
+Pellentesque at commodo augue. Donec elementum lacus eu feugiat adipiscing. Duis imperdiet at elit eget bibendum.
+Etiam ullamcorper sem non ligula blandit malesuada. Pellentesque iaculis feugiat cursus. Nullam eros dolor, dignissim
+eget orci vel, bibendum cursus sem.
+
+Nullam consectetur molestie quam eleifend tempus. Phasellus luctus porttitor tincidunt. Ut ut cursus velit.
+Nulla nisi sapien, volutpat in varius vel, rhoncus sit amet libero.
+			]]></description>
+        </experience>
+        <experience>
+            <start>01/07/2005</start>
+            <end>31/07/2005</end>
+            <name>Nullam sodales</name>
+            <employer>Family</employer>
+            <job>Software Developer</job>
+            <description><![CDATA[
+Nullam sodales ultrices purus ac convallis. Duis non ligula ligula. Praesent ut molestie massa, bibendum feugiat odio.
+Sed eu urna vehicula, tempus felis eget, volutpat elit. Suspendisse vehicula dui massa, nec aliquam dui sodales nec.
+Etiam a ligula sollicitudin turpis fermentum condimentum eu id sem.
+			]]></description>
+        </experience>
+    </experiences>
+
+    <studies>
+        <study>
+            <date>01/05/2009</date>
+            <description><![CDATA[
+Nam bibendum ante purus, eget semper turpis posuere consequat. Maecenas consectetur sodales porttitor. Quisque vitae
+libero vulputate, mollis urna non, imperdiet tortor.
+			]]></description>
+        </study>
+        <study>
+            <date>01/11/2008</date>
+            <description><![CDATA[
+Etiam rhoncus, libero sit amet convallis placerat, diam ante malesuada libero, vel varius turpis turpis quis diam.
+			]]></description>
+            <grade>Note 95%</grade>
+        </study>
+        <study>
+            <date>01/06/2002</date>
+            <description><![CDATA[
+Integer congue volutpat elementum. Nam et magna consequat, tempus tortor mattis, tempor diam. Etiam eu euismod mi.
+Morbi at eros sed magna blandit dignissim vitae eget nunc.
+			]]></description>
+            <grade>Note 70%</grade>
+        </study>
+    </studies>
+
+    <languages>
+        <language>
+            <name>Anglais</name>
+            <level>Courant</level>
+        </language>
+        <language>
+            <name>Français</name>
+            <level>Courant</level>
+        </language>
+    </languages>
+
+    <interests>
+        <interest>
+            <title>Sport</title>
+            <detail>Basket-ball, natation, tennis.</detail>
+        </interest>
+    </interests>
 </contents>

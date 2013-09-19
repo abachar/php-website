@@ -35,7 +35,7 @@ if (isset($_POST['send'])) {
 }
 
 render('contact', 'index', array(
-    'personalCard' => $personalCard,
+    'personalCard' => $content->personalCard,
     'name' => $name,
     'email' => $email,
     'subject' => $subject,

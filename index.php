@@ -56,8 +56,11 @@ if (!isset($GLOBALS['controller'])) {
     exit;
 }
 
-// Load content data
-load_contents(simplexml_load_file("{$WEBAPP_PATH}/contents/contents.xml"));
+// Include utils
+require_once("{$LIB_PATH}/utils.php");
+
+// Load contents
+require_once("{$WEBAPP_PATH}/contents/contents.php");
 
 // Call controller
 require_once("{$WEBAPP_PATH}/controllers/{$controller}.php");

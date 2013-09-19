@@ -48,8 +48,9 @@
             <ul>
                 <li><h5>{$personalCard->firstName} {$personalCard->lastName}</h5></li>
                 <li><i class="icon phone"></i><a href="tel:{$personalCard->mobile}">{$personalCard->mobile}</a></li>
-                <li><i class="icon mail"></i><a href="mailto:{$personalCard->email}">{$personalCard->email}</a></li>
-                <li><i class="icon mail"></i><a href="mailto:{$personalCard->email2}">{$personalCard->email2}</a></li>
+                {foreach $personalCard->emails as $email}
+                    <li><i class="icon mail"></i><a href="mailto:{$email}">{$email}</a></li>
+                {/foreach}
                 <li><i class="icon facebook"></i><a href="{$personalCard->facebook}">Facebook</a></li>
                 <li><i class="icon linkedin"></i><a href="{$personalCard->linkedin}">LinkedIn</a></li>
                 <li><i class="icon viadeo"></i><a href="{$personalCard->viadeo}">Viadeo</a></li>

@@ -49,7 +49,7 @@
                                 <img src="/blog/{$article->code}/assets/thumbnail.jpg" />
                             </a>
                         </figure>
-                        <p>{$article->description|nl2br|truncate:300}</p>
+                        <p>{$article->description|truncate:300|markdown}</p>
                     </article>
                     </article>
                 {/foreach}
