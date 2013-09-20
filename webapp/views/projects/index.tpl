@@ -22,7 +22,7 @@
                         {/if}
                     </figure>
                     <h4>{$project->name}</h4>
-                    <p class="description">{$project->description}</p>
+                    <div class="description">{$project->description|truncate:300|markdown}</div>
                 </article>
             {/foreach}
         </div>

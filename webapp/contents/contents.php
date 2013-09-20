@@ -59,7 +59,7 @@ class Content
         foreach ($this->xmlData->articles->article as $article) {
             $this->articles[(string)$article->code] = (object)array(
                 "code" => (string)$article->code,
-                "date" => (string)$article->date,
+                "date" => $this->parseDate((string)$article->date),
                 "author" => (string)$article->author,
                 "title" => (string)$article->title,
                 "description" => (string)$article->description,

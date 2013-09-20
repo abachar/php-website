@@ -27,11 +27,11 @@
                         <p><strong>{$experience->name}</strong> : {$experience->description}</p>
                         <p>{$experience->job}</p>
                         {if isset($experience->roles)}
-                            <ul>
+                            <ol>
                                 {foreach $experience->roles as $role}
                                     <li>{$role}</li>
                                 {/foreach}
-                            </ul>
+                            </ol>
                         {/if}
                         {if isset($experience->methods)}
                             <p>Méthodologie de travail : {foreach $experience->methods as $method}<em>{$method}</em>{/foreach}</p>

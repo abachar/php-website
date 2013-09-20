@@ -70,7 +70,7 @@ congue felis, vitae lobortis erat posuere a. Sed gravida nisl eget leo pellentes
             <date>11/12/2012</date>
             <title>Praesent ut velit congue</title>
             <printable>false</printable>
-            <draft>true</draft>
+            <draft>false</draft>
             <author>Abdelhakim Bachar</author>
             <description><![CDATA[
 Praesent ut velit congue, varius risus in, tristique enim. Curabitur sagittis volutpat felis vitae pharetra. Proin

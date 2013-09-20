@@ -60,7 +60,7 @@ function get_article_contents($code)
 {
     global $WEBAPP_PATH;
 
-    return file_get_contents("{$WEBAPP_PATH}/contents/assets/blog/{$code}/article.md");
+    return file_get_contents("{$WEBAPP_PATH}/contents/assets/articles/{$code}/article.md");
 }
 
 /**
