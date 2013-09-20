@@ -243,6 +243,7 @@
   }
 
   header {
+    background: @headerBackground;
     padding: 2.5em 0;
 
     .logo {
@@ -324,6 +325,7 @@
   }
 
   .content {
+    background: @contentBackground;
     ul {
       margin-bottom: 1.5em;
     }
@@ -363,6 +365,12 @@
         .border-radius(5px);
         height: 300px;
         width: @gridColumnWidth;
+      }
+    }
+
+    .about {
+      div {
+        margin-bottom: 2em;
       }
     }
   }
@@ -412,8 +420,8 @@
         margin: 0 0 1em 0;
         padding: 0.3em 0;
 
-        .badge {
-          background-color: lighten(@navbarLinkColor, 10%);
+        time {
+          background-color: @linkColor;
           color: @navbarLinkColorHover;
           .border-radius(5px);
           padding: 0.3em 0.5em;
@@ -429,10 +437,13 @@
       .description {
         display: inline-block;
         width: 754px;
+        height: 220px;
         margin-left: 20px;
+        position: relative;
 
-        p {
-          margin-bottom: 1.5em;
+        .readmore {
+          position: absolute;
+          bottom: 0;
         }
       }
     }

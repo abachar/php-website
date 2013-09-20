@@ -7,7 +7,7 @@
          {foreach $articles as $article}
             <article>
                 <h3>
-                    <time class="badge" datetime="{$article->date}">{$article->date|date_format:"d/m/Y"}</time>
+                    <time datetime="{$article->date}">{$article->date|date_format:"d/m/Y"}</time>
                     <a href="/blog/{$article->code}">{$article->title}</a>
                 </h3>
                 <figure>
@@ -17,7 +17,7 @@
                 </figure>
                 <div class="description">
                     {$article->description|markdown}
-                    <a href="/blog/{$article->code}">Lire la suite</a>
+                    <a class="readmore" href="/blog/{$article->code}">Lire la suite</a>
                 </div>
             </article>
         {/foreach}

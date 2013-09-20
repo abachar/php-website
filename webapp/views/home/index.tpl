@@ -23,7 +23,7 @@
                                 <img src="/projects/assets/{$project->code}/thumbnail.jpg" />
                             </figure>
                             <h4>{$project->name}</h4>
-                            <p>{$project->description|nl2br|truncate:200}</p>
+                            <div>{$project->description|truncate:200|markdown}</div>
                         </div>
                     {/foreach}
                 </div>
@@ -31,8 +31,8 @@
 
             <div class="column about">
                 <h1>À propos</h1>
-                <p>{$personalCard->about|markdown}</p>
-                <p><a href="/profile">Profil détaillé</a></p>
+                <div>{$personalCard->about|markdown}</div>
+                <a class="profile" href="/profile">Profil détaillé</a>
             </div>
         </section>
 
