@@ -80,7 +80,7 @@ function validate_not_empty($fieldName, &$errors, $msg)
  */
 function validate_not_empty_email($fieldName, &$errors, $msg1, $msg2)
 {
-    $email = validateNotEmpty($fieldName, $errors, $msg1);
+    $email = validate_not_empty($fieldName, $errors, $msg1);
     if (($email !== '') && !preg_match("/^[-a-z0-9!#$%&'*+\/=?^_`{|}~]+(\.[-a-z0-9!#$%&'*+\/=?^_`{|}~]+)*@(([a-z0-9]([-a-z0-9]*[a-z0-9]+)?){1,63}\.)+([a-z0-9]([-a-z0-9]*[a-z0-9]+)?){2,63}$/i", $email)) {
         $errors[$fieldName] = $msg2;
     }

@@ -139,10 +139,11 @@
         top: 50%;
         left: 50%;
         display: block;
-        margin: -13px 0 0 -13px;
-        width: 25px;
-        height: 26px;
-        background: url(../images/magnify.png) 50% 50% no-repeat;
+        margin: -16px 0 0 -16px;
+        width: 32px;
+        height: 32px;
+        background: url(../images/magnifier.png) 50% 50% no-repeat;
+        opacity: 0.8;
         content: "";
       }
     }
@@ -199,39 +200,25 @@
     }
   }
 
-  .icon {
+  i.icon {
     display: inline-block;
     width: @baseLineHeight;
     height: @baseLineHeight;
-    background-position: ((@baseLineHeight - @baseFontSize) / 3) ((@baseLineHeight - @baseFontSize) / 3);
+    background-position: 2px 2 px;
     background-repeat: no-repeat;
-    background-size: @baseFontSize;
     padding-right: 0.1em;
   }
 
-  .phone {
-    background-image: url(../images/phone.svg);
-  }
-
-  .mail {
-    background-image: url(../images/mail.svg);
-  }
-
-  .house {
-    background-image: url(../images/house.svg);
-  }
-
-  .print {
-    background-image: url(../images/printer.svg);
-  }
-
-  .download {
-    background-image: url(../images/download.svg);
-  }
-
-  .facebook {
-    background-image: url(../images/16-facebook.png);
-  }
+  i.phone { background-image: url(../images/phone.png); }
+  i.mail { background-image: url(../images/email.png); }
+  i.home { background-image: url(../images/home.png); }
+  i.facebook { background-image: url(../images/facebook.png); }
+  i.linkedin { background-image: url(../images/linkedin.png); }
+  i.viadeo { background-image: url(../images/viadeo.png); }
+  i.print { background-image: url(../images/printer.png); }
+  i.download { background-image: url(../images/download.png); }
+  i.success { background-image: url(../images/success.png); }
+  i.error { background-image: url(../images/error.png); }
 
   p.warning {
     background-color: #FCF8E3;
@@ -610,22 +597,12 @@
     .messages {
       margin-bottom: 3em;
 
-      .success, .error {
-        background-position: ((@baseLineHeight - @baseFontSize) / 3) ((@baseLineHeight - @baseFontSize) / 3);
-        background-repeat: no-repeat;
-        background-size: @baseFontSize;
-        padding-left: @baseLineHeight;
-      }
-
       .success {
         color: #3A87AD;
-        background-image: url(../images/information.svg);
-
       }
 
       .error {
         color: #B94A48;
-        background-image: url(../images/error.svg);
       }
     }
   }

@@ -12,10 +12,10 @@
 
             <div class="messages">
                 {foreach $errors as $error}
-                    <p class="error">{$error}</p>
+                    <p class="error"><i class="icon error"></i>{$error}</p>
                 {/foreach}
                 {if $sent}
-                    <p class="success">Merci, votre message a bien été envoyé.</p>
+                    <p class="success"><i class="icon success"></i>Merci, votre message a bien été envoyé.</p>
                 {/if}
             </div>
 
@@ -54,7 +54,7 @@
                 <li><i class="icon facebook"></i><a href="{$personalCard->facebook}">Facebook</a></li>
                 <li><i class="icon linkedin"></i><a href="{$personalCard->linkedin}">LinkedIn</a></li>
                 <li><i class="icon viadeo"></i><a href="{$personalCard->viadeo}">Viadeo</a></li>
-                <li><i class="icon house"></i>{$personalCard->address}</li>
+                <li><i class="icon home"></i>{$personalCard->address}</li>
             </ul>
         </aside>
     </section>

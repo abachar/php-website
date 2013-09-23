@@ -111,7 +111,7 @@
                 <li><i class="icon facebook"></i><a href="{$personalCard->facebook}">Facebook</a></li>
                 <li><i class="icon linkedin"></i><a href="{$personalCard->linkedin}">LinkedIn</a></li>
                 <li><i class="icon viadeo"></i><a href="{$personalCard->viadeo}">Viadeo</a></li>
-                <li><i class="icon house"></i>{$personalCard->address}</li>
+                <li><i class="icon home"></i>{$personalCard->address}</li>
                 <li>{$personalCard->age}, {$personalCard->civil}</li>
             </ul>
 
